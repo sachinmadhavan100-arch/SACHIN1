@@ -1,2 +1,130 @@
 # SACHIN1
 HTML,JAVA,CSS
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin's Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0 0;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 8px 0;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sachin Madhavan</h1>
+    <p>Web Developer | HTML, CSS, JavaScript</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Sachin, a passionate web developer skilled in creating modern, responsive, and interactive websites using HTML, CSS, and JavaScript.</p>
+  </section>  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Responsive Web Design</li>
+      <li>Basic Git & GitHub</li>
+    </ul>
+  </section>  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Personal Resume Website (this project)</li>
+      <li>Simple Portfolio Page with CSS animations</li>
+      <li>JavaScript Calculator</li>
+      <li>To-Do List App with Local Storage</li>
+    </ul>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sachin@example.com">sachin@example.com</a></p>
+    <p>Phone: +91-9876543210</p>
+    <button onclick="downloadResume()">Download Resume (PDF)</button>
+  </section>  <footer>
+    <p>© 2025 Sachin Madhavan. All rights reserved.</p>
+  </footer>  <script>
+    function downloadResume() {
+      alert("This will allow you to download the resume as PDF (feature to be added). For now, save this webpage as PDF.");
+    }
+  </script></body>
+</html>
